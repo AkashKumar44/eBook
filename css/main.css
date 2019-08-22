@@ -264,3 +264,14 @@ textarea {
   }
 }
 
+
+/*==========================
+  Custom css
+ ==========================*/
+
+nav {
+  background-color: transparent;
+}
+header li{
+  font-weight:bold; 
+}
