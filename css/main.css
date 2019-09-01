@@ -275,3 +275,6 @@ nav {
 header li{
   font-weight:bold; 
 }
+.item{
+  margin: 5px;
+}
