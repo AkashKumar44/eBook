@@ -6,6 +6,8 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- top -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -14,23 +16,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/materialize.min.css">
+
   <link rel="stylesheet" href="css/main.css">
 
   <style type="text/css">
     .carousel{
-      margin-top: -90px !important;
-      
+      margin-top: -90px !important;   
     }
     .carousel-item{
       width: auto !important;
       height: auto !important;
     }
   </style>
-
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
+  <!-- top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -122,10 +124,11 @@
           <p class="grey-text text-lighten-4"><strong>One stop solution for all your web-dev needs.</strong></p>
           <p>Our Social Links</p>
           <p>
-            <a href="#"> <i class="fa fa-facebook-square fa-2x white-text" aria-hidden="true"></i></a>
-            <a href="#"> <i class="fa fa-twitter fa-2x white-text" aria-hidden="true" style="margin-left: 10px;"></i></a>  <!--added inline padding-left-->
-            <a href="#"> <i class="fa fa-google-plus fa-2x white-text" aria-hidden="true" style="margin-left: 10px;"></i></a>
-            <a href="#"> <i class="fa fa-github fa-2x white-text" aria-hidden="true" style="margin-left: 10px;"></i></a>
+            <a href="https://www.facebook.com"> <i class="fa fa-facebook-square fa-1x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com"> <i class="fa fa-twitter fa-1x " aria-hidden="true" style="margin-left: 10px;"></i></a>  
+            <a href="https://www.google.com/"> <i class="fa fa-google-plus fa-1x " aria-hidden="true" style="margin-left: 10px;"></i></a>
+            <a href="https://www.instagram.com/"> <i class="fa fa-linkedin-square fa-1x" aria-hidden="true" style="margin-left: 10px;"></i></a>
+            <!-- <a href="#"> <i class="fa fa-github fa-2x white-text" aria-hidden="true" style="margin-left: 10px;"></i></a> -->
           </p>
         </div>
         <div class="col l4 offset-l2 s12">
@@ -142,10 +145,29 @@
     <div class="footer-copyright #424242 grey darken-3">
       <div class="container">
       © All Copyrights Are Reserved To w3Stack.com 
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
       </div>
     </div>
   </footer>
+  <!-- top -->
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button  
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+        } 
+         else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -153,6 +175,7 @@
   <script src="js/vendor/materialize.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+ 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -160,6 +183,9 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+ <!-- fontowsam -->
+  <script src="https://use.fontawesome.com/c892657ecc.js"></script>
+
 </body>
 
 </html>
