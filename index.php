@@ -31,6 +31,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
+  <?php echo"hi";?>
   <!-- top -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <!--[if IE]>
