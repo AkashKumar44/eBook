@@ -308,3 +308,6 @@ body {
 #myBtn:hover {
   background-color: #555;
 }
+.po.ftco-animate {
+  opacity: 0;
+  visibility: hidden; }
